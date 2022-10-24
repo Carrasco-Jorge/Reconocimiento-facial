@@ -1,0 +1,11 @@
+# ----- Hyperparameters ----- #
+
+image_size      : (112, 92)
+batch_size      : 20
+epochs          : 100
+dropout         : 0.2
+last_activation : sigmoid
+loss            : categorical_crossentropy
+learning_rate   : 0.0001
+optimizer       : adam
+seed            : 2022

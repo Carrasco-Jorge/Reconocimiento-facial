@@ -1,0 +1,42 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 112, 92, 1)]      0         
+                                                                 
+ sequential (Sequential)     (None, 112, 92, 1)        0         
+                                                                 
+ rescaling (Rescaling)       (None, 112, 92, 1)        0         
+                                                                 
+ conv2d (Conv2D)             (None, 109, 89, 64)       1088      
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 54, 44, 64)       0         
+ )                                                               
+                                                                 
+ separable_conv2d (Separable  (None, 51, 41, 128)      9344      
+ Conv2D)                                                         
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 25, 20, 128)      0         
+ 2D)                                                             
+                                                                 
+ separable_conv2d_1 (Separab  (None, 22, 17, 128)      18560     
+ leConv2D)                                                       
+                                                                 
+ max_pooling2d_2 (MaxPooling  (None, 11, 8, 128)       0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (None, 11264)             0         
+                                                                 
+ dropout (Dropout)           (None, 11264)             0         
+                                                                 
+ dense (Dense)               (None, 40)                450600    
+                                                                 
+ dense_1 (Dense)             (None, 40)                1640      
+                                                                 
+ dense_2 (Dense)             (None, 40)                1640      
+                                                                 
+=================================================================
+Total params: 482,872
+Trainable params: 482,872
+Non-trainable params: 0
+_________________________________________________________________

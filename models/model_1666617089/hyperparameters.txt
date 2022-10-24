@@ -1,0 +1,10 @@
+# ----- Hyperparameters ----- #
+
+image_size      : (112, 92)
+batch_size      : 10
+epochs          : 100
+dropout         : 0.2
+last_activation : sigmoid
+loss            : categorical_crossentropy
+learning_rate   : 0.0001
+seed            : 2022
